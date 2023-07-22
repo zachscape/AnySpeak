@@ -1,0 +1,36 @@
+const LanguageService = {
+    getLanguages() {
+        return ["Select language","English","Mandarin Chinese","Hindi","Spanish","French","Standard Arabic","Bengali",
+        "Russian","Portuguese","Indonesian","Urdu","German","Japanese","Swahili","Marathi","Telugu",
+        "Turkish","Tamil","Vietnamese","Korean","Italian","Yoruba","Cantonese","Thai",
+"Gujarati",
+        "Javanese",
+        "Iranian Persian",
+        "Polish",
+        "Pashto",
+        "Kannada",
+        "Xiang Chinese",
+        "Malayalam",
+        "Sundanese",
+        "Dutch",
+        "Nepali",
+        "Sindhi",
+        "Romanian",
+        "Sinhala",
+        "Hausa",
+        "Burmese",
+        "Filipino",
+        "Ukrainian",
+        "Amharic",
+        "Farsi",
+        "Oromo",
+        "Maithili",
+        "Uzbek",
+        "Sudanese Arabic",
+        "Azerbaijani",
+        "Gan Chinese",
+        "Cebuano"];
+    },
+};
+
+export default LanguageService;
