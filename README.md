@@ -1,72 +1,71 @@
-Building the APK
-To build an APK for Android, you'll need to generate a signing key and then set up gradle variables.
+# README for AnySpeak
 
-Generating a signing key
-You can generate a private signing key using keytool. Here is how to do it:
+## Prerequisites
+- Node.js
+- npm
+- React Native CLI
+- Android Studio (for Android)
+- Xcode (for iOS)
+- Git
 
-Open the Terminal.
-Change the directory to the location where you want to store your key.
-Once you’re in the directory, run the following command:
-sh
-Copy code
-keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
-This command prompts you for passwords for the keystore and key, and to provide the Distinguished Name fields for your key.
+## Download & Extract Repo
 
-Setting up gradle variables
-Place the my-upload-key.keystore file under the android/app directory in your project folder.
+### Android
 
-Edit the android/gradle.properties or ~/.gradle/gradle.properties and add the following lines:
+<a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
 
-properties
-Copy code
-MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
-MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
-MYAPP_UPLOAD_STORE_PASSWORD=*****
-MYAPP_UPLOAD_KEY_PASSWORD=*****
-Replace ***** with your actual passwords.
+## Build the APK 
+1. Run the following command to install all the required node modules in the root directory
+```npm install```
+2. Run the following command to start the Metro Bundler.
+```
+npx react-native start
+```
+3. Open a new terminal window and navigate to the same directory.
+4. Run the following command to build the APK.
+```
+npx react-native run-android
+```
+5. Once the build is successful, the app will be automatically installed on the emulator. Building is required. You can use the emulator or your phone.
 
-Adding signing config to your app's gradle config
-Edit the android/app/build.gradle file in your project folder, and add the signing config:
-gradle
-Copy code
-...
-android {
-    ...
-    defaultConfig { ... }
-    signingConfigs {
-        release {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-                storeFile file(MYAPP_UPLOAD_STORE_FILE)
-                storePassword MYAPP_UPLOAD_STORE_PASSWORD
-                keyAlias MYAPP_UPLOAD_KEY_ALIAS
-                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
-            }
-        }
-    }
-    buildTypes {
-        release {
-            ...
-            signingConfig signingConfigs.release
-        }
-    }
-}
-...
-Generating the release APK
-Run the following in a terminal:
+## Move the App on Android Phone
+1. Connect your Android device to your computer.
+2. Copy the APK file from the `android/app/build/outputs/apk/debug` directory in your project folder.
+3. Paste the APK file anywhere in your Android device.
+4. On your Android device, navigate to the location of the APK file.
+5. Tap on the APK file and install the app.
 
-sh
-Copy code
-cd android
-./gradlew assembleRelease
-The generated APK can be found under android/app/build/outputs/apk/release/app-release.apk.
+### IOS
 
-Uploading to Google Play
-To upload the APK to Google Play:
+## Build the App
+1. Navigate to the iOS directory in your project folder.
+```
+cd ios
+```
+2. Install the required CocoaPods.
+```
+pod install
+```
+3. Return to the main project directory.
+```
+cd ..
+```
+4. Run the following command to start the Metro Bundler.
+```
+npx react-native start
+```
+5. Open a new terminal window and navigate to your project directory.
+6. Run the following command to build the app.
+```
+npx react-native run-ios
+```
+7. Once the build is successful, the app will be automatically installed on the iOS simulator. Building is required. You can use the emulator or your phone.
 
-Go to the Google Play Console.
-Select your app.
-On the left menu, click on "Release management", then "App releases".
-Click on "MANAGE PRODUCTION" then "CREATE RELEASE".
-Under "APKs to add", click on "BROWSE FILES", and upload your app-release.apk file.
-Fill out the rest of the form as instructed.
-Click on "Review", then "Start rollout to production".
+## Move the App on iOS Phone
+1. Open Xcode and navigate to Window > Devices and Simulators.
+2. Connect your iOS device to your computer.
+3. Select your device from the list and click on the '+' button under 'Installed Apps'.
+4. Navigate to the location of your `.app` file in the `ios/build/Build/Products/Debug-iphonesimulator` directory in
+your project folder.
+5. Select the `.app` file and click on 'Open'.
+6. The app will be installed on your iOS device.
