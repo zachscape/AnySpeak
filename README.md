@@ -1,7 +1,9 @@
 # README for AnySpeak
 
 <a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
+
 #Manual build instructions
+
 ## Prerequisites
 - Node.js
 - npm
