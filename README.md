@@ -1,15 +1,16 @@
 # README for AnySpeak
+
 ## Features
--Easily speak to anyone in 50 languages
--Input your language at first-time setup, then select their language
+- Easily speak to anyone in 50 languages
+- Input your language at first-time setup, then select their language
 and hit SPEAK. No changing directions, one simple tap per conversation piece.
--Detects input voice language then speaks in the other language
+- Detects input voice language then speaks in the other language
 while displaying each line in both languages in text-message style.
 Currently limited to 5 second voice inputs.
--Your OpenAi API key is saved locally to your phone, but not
+- Your OpenAi API key is saved locally to your phone, but not
 anywhere else.
--Get your OpenAi API key here: https://openai.com/blog/openai-api
--If your device gets compromised for some nonrelated reason, be
+- Get your OpenAi API key here: https://openai.com/blog/openai-api
+- If your device gets compromised for some nonrelated reason, be
 sure to disable your api key in OpenAi, and generate a new one in
 case the perpetrator stole your key. Update your key in the app by tapping the cogwheel in the top right.
 
