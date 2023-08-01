@@ -14,7 +14,7 @@
 
 <a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
 
-## Build the APK 
+## Or build the Android APK 
 1. Run the following command to install all the required node modules in the root directory
 ```npm install```
 2. Run the following command to start the Metro Bundler.
@@ -35,7 +35,7 @@ npx react-native run-android
 4. On your Android device, navigate to the location of the APK file.
 5. Tap on the APK file and install the app.
 
-### IOS
+### IOS Instructions (Must build manually, for now, to keep AnySpeak completely free)
 
 ## Build the App
 1. Navigate to the iOS directory in your project folder.
