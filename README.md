@@ -1,5 +1,7 @@
 # README for AnySpeak
 
+<a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
+#Manual build instructions
 ## Prerequisites
 - Node.js
 - npm
@@ -10,11 +12,9 @@
 
 ## Download & Extract Repo
 
-### Android
+# Android
 
-<a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
-
-## Or build the Android APK 
+## Build the Android APK 
 1. Run the following command to install all the required node modules in the root directory
 ```npm install```
 2. Run the following command to start the Metro Bundler.
