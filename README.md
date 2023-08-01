@@ -1,5 +1,5 @@
 # README for AnySpeak
-##Features
+## Features
 -Easily speak to anyone in 50 languages
 -Input your language at first-time setup, then select their language
 and hit SPEAK. No changing directions, one simple tap per conversation piece.
