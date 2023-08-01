@@ -35,7 +35,7 @@ npx react-native run-android
 4. On your Android device, navigate to the location of the APK file.
 5. Tap on the APK file and install the app.
 
-### IOS Instructions (Must build manually, for now, to keep AnySpeak completely free)
+# IOS Instructions (Must build manually, for now, to keep AnySpeak completely free)
 
 ## Build the App
 1. Navigate to the iOS directory in your project folder.
