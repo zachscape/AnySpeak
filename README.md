@@ -2,7 +2,7 @@
 
 <a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
 
-Manual build instructions
+Android and IOS manual build instructions
 
 ## Prerequisites
 - Node.js
