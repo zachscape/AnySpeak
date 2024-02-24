@@ -14,10 +14,6 @@ anywhere else.
 sure to disable your api key in OpenAi, and generate a new one in
 case the perpetrator stole your key. Update your key in the app by tapping the cogwheel in the top right.
 
-<a href='https://play.google.com/store/apps/details?id=com.anyspeak'>Download on Google Play</a>
-
-Android and IOS manual build instructions
-
 ## Prerequisites
 - Node.js
 - npm
